@@ -1,0 +1,108 @@
+/* #region import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap');
+/* #endregion import fonts */
+
+/* #region native */
+  #root {
+    background: #1E1E1E;
+  }
+  html {
+    background: #1E1E1E !important;
+  }
+  hr {
+    border-top: 1px solid rgba(217, 217, 217, 0.08) !important;
+  }
+/* #endregion native */
+/* #region profile style */
+  .profile-height-full-screen {
+    height: 100vh;
+  }
+  .profile-height-1-1 {
+    min-height: 100%;
+    width: 100%;
+    height: 100%;
+  }
+  .profile-font-header {
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffffff;
+  }
+  .profile-badge {
+    background: #ffffff;
+    color: #333333;
+    border-radius: 100px;
+    /* padding: 10px 30px; */
+    /* padding: 8px; */
+    /* margin: 2px; */
+    padding: 10px 30px;
+    gap: 10px;
+  }
+  .profile-block-gravity {
+    display: inline-flex;
+  }
+  .profile-font-list {
+    font-family: "Inter Tight" !important;
+    font-size: 32px !important;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 120px;
+
+    background: url(./Images/me.jpg);
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 170px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+  .profile-logo {
+    width: 75px;
+    height: 75px;
+  }
+  .profile-badge:hover {
+    background-color: #FFD600;
+    cursor: pointer;
+  }
+  .profile-card {
+    background: #262626 !important;
+  }
+  .profile-font {
+    font-family: 'EB Garamond';
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .profile-card a {
+    color: #FFD600 !important;
+  }
+  .profile-border-rounded {
+    border-radius: 16px;
+  }
+  .profile-font-white {
+    color: #e5e5e5
+  }
+  .profile-scroll {
+    height: 95vh;
+    overflow: auto;
+  }
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .profile-scroll::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .profile-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+/* #endregion profile style */
