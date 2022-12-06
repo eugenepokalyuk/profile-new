@@ -1,44 +1,43 @@
 import React from 'react';
 import Matter from 'matter-js';
-
 const {useEffect, useRef} = React;
 
 const skillsList1 = {
   'CSS3': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/CSS3.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/CSS3.png?raw=true"
   },
   'HTML5': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/HTML5.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/HTML5.png?raw=true"
   },
   'RestAPI': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/RestAPI.png?raw=true"  
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/RestAPI.png?raw=true"  
   },
   'Tabulator': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/Tabulator.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/Tabulator.png?raw=true"
   },
   'PostgreSQL': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/PostgreSQL.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/PostgreSQL.png?raw=true"
   },
   'Nunjucks': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/Nunj.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/Nunj.png?raw=true"
   },
   'SQL': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/SQL.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/SQL.png?raw=true"
   },
   'NodeJS': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/NodeJS.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/NodeJS.png?raw=true"
   },
   'JavaScript': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/JavaScript.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/JavaScript.png?raw=true"
   },
   'Bootstrap': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/Bootstrap.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/Bootstrap.png?raw=true"
   },
   'SQLite3': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/SQLite3.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/SQLite3.png?raw=true"
   },
   'ExpressJS': { 
-    backgroundImage: "https://github.com/eugenepokalyuk/profile-new/blob/main/src/Images/assets/ExpressJS.png?raw=true"
+    backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/ExpressJS.png?raw=true"
   }
 }
 
