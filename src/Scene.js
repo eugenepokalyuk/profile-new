@@ -40,7 +40,6 @@ const skillsList1 = {
     backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/ExpressJS.png?raw=true"
   }
 }
-
 export const Scene = () => {
     const boxRef = useRef(null);
     const canvasRef = useRef(null);
@@ -137,8 +136,8 @@ export const Scene = () => {
       <div
         ref={boxRef}
         style={{
-          width: 700,
-          height: 400
+          // width: 600,
+          // height: 250
         }}
       >
         <canvas ref={canvasRef} />

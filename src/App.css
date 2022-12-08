@@ -105,4 +105,18 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+  .profile-flex {
+    display: flex;
+  }
+  .profile-flex-col {
+    flex-direction: column;
+  }
+  .profile-flex-between {
+    justify-content: space-between;
+  }
+  .profile-test {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 /* #endregion profile style */

@@ -54,11 +54,12 @@ function App(props) {
 
         </div>
 
-        <div className='uk-width-expand@m uk-padding uk-padding-remove-top'>
+        <div className='uk-width-expand@m uk-padding uk-padding-remove-top profile-flex profile-flex-col profile-flex-between uk-padding-remove-bottom'>
           <div className="uk-card uk-card-body uk-grid-margin uk-text-left">
             <h1 className='profile-font-header uk-animation-slide-top'>Привет! Меня зовут Евгений. Я занимаюсь фронтенд разработкой</h1> 
           </div>
-          <div className="uk-card uk-text-left" id="phaser-example">
+          <div className="uk-card uk-text-left uk-visible@s" id="phaser-example">
+          {/* <div className="uk-card uk-text-left uk-hidden@s" id="phaser-example"> */}
             <Scene />
           </div>
         </div>
