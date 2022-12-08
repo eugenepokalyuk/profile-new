@@ -142,6 +142,100 @@ function App(props) {
               </div>
             </div>
 
+            <div className="uk-card uk-text-left uk-animation-slide-top uk-margin-top">
+              <div className='uk-card uk-padding-small profile-border-rounded profile-card profile-font'>
+                <p className='uk-text-center profile-font-white'>Писал проекты</p>
+                
+                <hr />
+
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">HTML & CSS</div>
+                  </div>
+
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/profile/">Previous portfolio site</a>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">React</div>
+                  </div>
+
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/todo-list/">Todo list</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/magic-cube/">Magic Ball</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/calc/">Calculator</a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">HTML Academy</div>
+                  </div>
+
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="#test">«Старт во фронтенде»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="#test">«Погружение в вёрстку»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="#test">«Погружение в JavaScript»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="#test">«Продвинутые техники и инструменты вёрстки»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="#test">«Знакомство с бэкендом»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="#test">«Ретровёрстка»</a>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">Skillbox</div>
+                  </div>
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="#test">Веб-верстка «Базовый уровень», «Продвинутый уровень»</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="#test">JavaScript «Базовый уровень», «Продвинутый уровень»</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="#test">Node.js</a>
+                    </div>
+                  </div>
+                </div> */}
+                
+              </div>
+            </div>
+
         </div>
 
       </div>
