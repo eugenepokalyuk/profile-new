@@ -6,6 +6,13 @@ import 'uikit/dist/js/uikit.js'
 import Scene from './Scene.js'
 
 function App(props) {
+
+  const styles = {
+    "fill-rule":"evenodd", 
+    "clip-rule":"evenodd", 
+    "stroke-linejoin":"round",
+    "stroke-miterlimit":"1.41421"
+  }
   return (
     <div className="App uk-animation-fade">
 
@@ -21,32 +28,19 @@ function App(props) {
             <div>
 
               <div className='profile-logo uk-margin uk-animation-slide-top gh-logo'>
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clipPath="url(#clip0_26_844)">
-                  <rect width="80" height="80" rx="40" fill="#454545"/>
-                  <path d="M39 79C61.0967 79 79 61.0967 79 39C79 16.9033 61.0967 -1 39 -1C16.9033 -1 -1 16.9033 -1 39C-1 61.0967 16.9033 79 39 79ZM17.3033 38.1333L55.87 23.2633C57.66 22.6167 59.2233 23.7 58.6433 26.4067L58.6467 26.4033L52.08 57.34C51.5933 59.5333 50.29 60.0667 48.4667 59.0333L38.4667 51.6633L33.6433 56.31C33.11 56.8433 32.66 57.2933 31.6267 57.2933L32.3367 47.1167L50.87 30.3733C51.6767 29.6633 50.69 29.2633 49.6267 29.97L26.7233 44.39L16.85 41.31C14.7067 40.63 14.66 39.1667 17.3033 38.1333V38.1333Z" fill="#222222"/>
-                  <rect x="1" y="1" width="78" height="78" rx="39" stroke="#454545" strokeWidth="2"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_26_844">
-                  <rect width="80" height="80" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
+                <a href="https://t.me/papercranejs">
+                  <svg width="80px" height="80px" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" space="preserve" serif="http://www.serif.com/" style={styles} className='colorizeSVG'>
+                    <path id="telegram-4" d="M12,0c-6.626,0 -12,5.372 -12,12c0,6.627 5.374,12 12,12c6.627,0 12,-5.373 12,-12c0,-6.628 -5.373,-12 -12,-12Zm3.224,17.871c0.188,0.133 0.43,0.166 0.646,0.085c0.215,-0.082 0.374,-0.267 0.422,-0.491c0.507,-2.382 1.737,-8.412 2.198,-10.578c0.035,-0.164 -0.023,-0.334 -0.151,-0.443c-0.129,-0.109 -0.307,-0.14 -0.465,-0.082c-2.446,0.906 -9.979,3.732 -13.058,4.871c-0.195,0.073 -0.322,0.26 -0.316,0.467c0.007,0.206 0.146,0.385 0.346,0.445c1.381,0.413 3.193,0.988 3.193,0.988c0,0 0.847,2.558 1.288,3.858c0.056,0.164 0.184,0.292 0.352,0.336c0.169,0.044 0.348,-0.002 0.474,-0.121c0.709,-0.669 1.805,-1.704 1.805,-1.704c0,0 2.084,1.527 3.266,2.369Zm-6.423,-5.062l0.98,3.231l0.218,-2.046c0,0 3.783,-3.413 5.941,-5.358c0.063,-0.057 0.071,-0.153 0.019,-0.22c-0.052,-0.067 -0.148,-0.083 -0.219,-0.037c-2.5,1.596 -6.939,4.43 -6.939,4.43Z"/>
+                  </svg>
+                </a>
               </div>
 
               <div className='profile-logo uk-animation-slide-top tg-logo'>
-                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clipPath="url(#clip0_26_849)">
-                  <rect width="80" height="80" rx="40" fill="white" fillOpacity="0.16"/>
-                  <path d="M39.9953 2C19.0145 2 2.00002 18.9851 2.00002 39.9377C1.99145 47.8897 4.49621 55.6432 9.16032 62.1026C13.8244 68.5619 20.412 73.4004 27.992 75.9342C29.892 76.2837 30.5855 75.1123 30.5855 74.1063C30.5855 73.2041 30.5523 70.8188 30.5333 67.6542C19.9645 69.945 17.732 62.5672 17.732 62.5672C16.0078 58.1839 13.514 57.0173 13.514 57.0173C10.0608 54.6651 13.7705 54.7123 13.7705 54.7123C17.5848 54.9815 19.5893 58.6232 19.5893 58.6232C22.9808 64.4187 28.486 62.7467 30.652 61.7737C30.994 59.3223 31.9773 57.6502 33.065 56.7008C24.629 55.742 15.756 52.4876 15.756 37.9539C15.756 33.8116 17.238 30.425 19.67 27.7705C19.2758 26.8116 17.9743 22.9527 20.0405 17.7334C20.0405 17.7334 23.2325 16.7132 30.4905 21.6207C33.5911 20.7781 36.7905 20.3493 40.0048 20.3454C43.2191 20.3517 46.4185 20.7822 49.519 21.6254C56.7722 16.7179 59.9595 17.7381 59.9595 17.7381C62.0305 22.9621 60.729 26.8163 60.3395 27.7752C62.7762 30.4297 64.244 33.8163 64.244 37.9587C64.244 52.5301 55.3615 55.7373 46.897 56.6772C48.2602 57.8486 49.4762 60.163 49.4762 63.7008C49.4762 68.7736 49.4287 72.864 49.4287 74.1063C49.4287 75.1218 50.1127 76.3026 52.0412 75.9295C59.6139 73.3897 66.1933 68.5493 70.8509 62.0916C75.5085 55.6338 78.0092 47.8846 78 39.9377C78 18.9851 60.9855 2 39.9953 2Z" fill="#222222"/>
-                  </g>
-                  <defs>
-                  <clipPath id="clip0_26_849">
-                  <rect width="80" height="80" fill="white"/>
-                  </clipPath>
-                  </defs>
-                </svg>
+                <a href="https://github.com/eugenepokalyuk">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" className='colorizeSVG'>
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </a>
               </div>
 
             </div>
@@ -78,10 +72,10 @@ function App(props) {
 
                   <div className='uk-text-left'>
                     <div className="uk-card">
-                      <a href="#test">Responsive Web Design</a>
+                      <a href="https://www.freecodecamp.org/certification/eugene.pokalyuk/responsive-web-design" target="_blank" rel="noopener noreferrer">Responsive Web Design</a>
                     </div>
                     <div className="uk-card">
-                      <a href="#test">JavaScript Algorithms and Data Structures</a>
+                      <a href="https://www.freecodecamp.org/certification/eugene.pokalyuk/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">JavaScript Algorithms and Data Structures</a>
                     </div>
                   </div>
                 </div>
@@ -95,27 +89,27 @@ function App(props) {
 
                   <div className='uk-text-left'>
                     <div className="uk-card">
-                      <a href="#test">«Старт во фронтенде»</a>
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Старт во фронтенде»</a>
                     </div>
 
                     <div className="uk-card">
-                      <a href="#test">«Погружение в вёрстку»</a>
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Погружение в вёрстку»</a>
                     </div>
 
                     <div className="uk-card">
-                      <a href="#test">«Погружение в JavaScript»</a>
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Погружение в JavaScript»</a>
                     </div>
 
                     <div className="uk-card">
-                      <a href="#test">«Продвинутые техники и инструменты вёрстки»</a>
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Продвинутые техники и инструменты вёрстки»</a>
                     </div>
 
                     <div className="uk-card">
-                      <a href="#test">«Знакомство с бэкендом»</a>
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Знакомство с бэкендом»</a>
                     </div>
 
                     <div className="uk-card">
-                      <a href="#test">«Ретровёрстка»</a>
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Ретровёрстка»</a>
                     </div>
                   </div>
                 </div>
@@ -128,13 +122,13 @@ function App(props) {
                   </div>
                   <div className='uk-text-left'>
                     <div className="uk-card">
-                      <a href="#test">Веб-верстка «Базовый уровень», «Продвинутый уровень»</a>
+                      <a href="#example">Веб-верстка «Базовый уровень», «Продвинутый уровень»</a>
                     </div>
                     <div className="uk-card">
-                      <a href="#test">JavaScript «Базовый уровень», «Продвинутый уровень»</a>
+                      <a href="#example">JavaScript «Базовый уровень», «Продвинутый уровень»</a>
                     </div>
                     <div className="uk-card">
-                      <a href="#test">Node.js</a>
+                      <a href="#example">Node.js</a>
                     </div>
                   </div>
                 </div>
@@ -155,7 +149,7 @@ function App(props) {
 
                   <div className='uk-text-left'>
                     <div className="uk-card">
-                      <a href="https://eugenepokalyuk.github.io/profile/">Previous portfolio site</a>
+                      <a href="https://eugenepokalyuk.github.io/profile/" target="_blank" rel="noopener noreferrer">Previous portfolio site</a>
                     </div>
                   </div>
                 </div>
@@ -169,69 +163,16 @@ function App(props) {
 
                   <div className='uk-text-left'>
                     <div className="uk-card">
-                      <a href="https://eugenepokalyuk.github.io/todo-list/">Todo list</a>
+                      <a href="https://eugenepokalyuk.github.io/todo-list/" target="_blank" rel="noopener noreferrer">Todo list</a>
                     </div>
                     <div className="uk-card">
-                      <a href="https://eugenepokalyuk.github.io/magic-cube/">Magic Ball</a>
+                      <a href="https://eugenepokalyuk.github.io/magic-cube/" target="_blank" rel="noopener noreferrer">Magic Ball</a>
                     </div>
                     <div className="uk-card">
-                      <a href="https://eugenepokalyuk.github.io/calc/">Calculator</a>
+                      <a href="https://eugenepokalyuk.github.io/calc/" target="_blank" rel="noopener noreferrer">Calculator</a>
                     </div>
                   </div>
                 </div>
-
-                {/* <hr />
-                
-                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
-                  <div className='uk-width-1-3@m'>
-                    <div className="uk-card uk-text-left">HTML Academy</div>
-                  </div>
-
-                  <div className='uk-text-left'>
-                    <div className="uk-card">
-                      <a href="#test">«Старт во фронтенде»</a>
-                    </div>
-
-                    <div className="uk-card">
-                      <a href="#test">«Погружение в вёрстку»</a>
-                    </div>
-
-                    <div className="uk-card">
-                      <a href="#test">«Погружение в JavaScript»</a>
-                    </div>
-
-                    <div className="uk-card">
-                      <a href="#test">«Продвинутые техники и инструменты вёрстки»</a>
-                    </div>
-
-                    <div className="uk-card">
-                      <a href="#test">«Знакомство с бэкендом»</a>
-                    </div>
-
-                    <div className="uk-card">
-                      <a href="#test">«Ретровёрстка»</a>
-                    </div>
-                  </div>
-                </div>
-
-                <hr />
-                
-                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
-                  <div className='uk-width-1-3@m'>
-                    <div className="uk-card uk-text-left">Skillbox</div>
-                  </div>
-                  <div className='uk-text-left'>
-                    <div className="uk-card">
-                      <a href="#test">Веб-верстка «Базовый уровень», «Продвинутый уровень»</a>
-                    </div>
-                    <div className="uk-card">
-                      <a href="#test">JavaScript «Базовый уровень», «Продвинутый уровень»</a>
-                    </div>
-                    <div className="uk-card">
-                      <a href="#test">Node.js</a>
-                    </div>
-                  </div>
-                </div> */}
                 
               </div>
             </div>

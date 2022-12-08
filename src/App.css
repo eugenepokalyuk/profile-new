@@ -114,9 +114,11 @@
   .profile-flex-between {
     justify-content: space-between;
   }
-  .profile-test {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .colorizeSVG {
+    fill: #262626;
+  }
+  .colorizeSVG:hover {
+    fill: #e5e5e5;
+    cursor: pointer;
   }
 /* #endregion profile style */
