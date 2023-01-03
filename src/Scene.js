@@ -108,7 +108,7 @@ export const Scene = () => {
       World.add(engine.world, mouseConstraint);
 
       Object.entries(skillsList1).forEach(element => {
-        let x = Math.floor(Math.random() * 700) + 1;
+        let x = Math.floor(Math.random() * 700) + 2;
         let y = Math.floor(Math.random() * 200) + 1;
         World.add(engine.world, [top, ground, right, left, Bodies.rectangle(x, y, 190, 90, { 
             // restitution:0.05,

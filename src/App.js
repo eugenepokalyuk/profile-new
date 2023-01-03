@@ -138,11 +138,11 @@ function App(props) {
 
             <div className="uk-card uk-text-left uk-animation-slide-top uk-margin-top">
               <div className='uk-card uk-padding-small profile-border-rounded profile-card profile-font'>
-                <p className='uk-text-center profile-font-white'>Писал проекты</p>
+                <p className='uk-text-center profile-font-white'>Написал проекты</p>
                 
-                <hr />
+                {/* <hr /> */}
 
-                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                {/* <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
                   <div className='uk-width-1-3@m'>
                     <div className="uk-card uk-text-left">HTML & CSS</div>
                   </div>
@@ -152,7 +152,7 @@ function App(props) {
                       <a href="https://eugenepokalyuk.github.io/profile/" target="_blank" rel="noopener noreferrer">Previous portfolio site</a>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <hr />
                 
