@@ -164,4 +164,66 @@
     font-size: 20px;
     color: #fff;
   }
+  .badge-menu-mobile span {
+    display: inline-block;
+    font-size: 18px;
+    padding: 5px 15px;
+    margin: 2px;
+    border-radius: 100px;
+  }
+  .badge-menu span {
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px 30px;
+    margin: 4px;
+    border-radius: 100px;
+  }
+  .CSS3 {
+    background: #0038FF;
+    color: #fff;
+  }
+  .RestAPI {
+    background: #fff;
+    color: #333333;
+  }
+  .Tabulator {
+    background: #fff;
+    color: #333333;
+  }
+  .HTML5 {
+    background: #FF7A00;
+    color: #fff;
+  }
+  .Nunjucks {
+    background: #3C8430;
+    color: #fff;
+  }
+  .PostgreSQL {
+    background: #fff;
+    color: #333333;
+  }
+  .SQL {
+    background: #71DDFF;
+    color: #333333;
+  }
+  .JavaScript {
+    background: #FFD600;
+    color: #333333;
+  }
+  .NodeJS {
+    background: #14FA00;
+    color: #333333;
+  }
+  .Bootstrap {
+    background: #943EEA;
+    color: #fff;
+  }
+  .SQLite3 {
+    background: #fff;
+    color: #333333;
+  }
+  .ExpressJS {
+    background: #444444;
+    color: #fff;
+  }
 /* #endregion profile style */

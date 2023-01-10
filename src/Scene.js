@@ -42,8 +42,8 @@ const skillsList1 = {
 export const Scene = () => {
     const boxRef = useRef(null);
     const canvasRef = useRef(null);
-    const [width, setWidth] = useState(1200);
-    const [height, setHeight] = useState(800);
+    const [width, setWidth] = useState();
+    const [height, setHeight] = useState();
     const style = { width, height };
 
     useLayoutEffect(() => {
@@ -52,6 +52,8 @@ export const Scene = () => {
         let World = Matter.World;
         let Bodies = Matter.Bodies;
         let Mouse = Matter.Mouse;
+        let Common = Matter.Common;
+        let Composites = Matter.Composites;
         let MouseConstraint = Matter.MouseConstraint;
         let engine = Engine.create();
         let render = Render.create({
@@ -65,33 +67,14 @@ export const Scene = () => {
         });
         
       //#region [ walls ]
-        const top = Bodies.rectangle(0, 0, 1600, 25, {
-            isStatic: true,
-            render: {
-                // fillStyle: 'red',
-                fillStyle: 'transparent',
-            }
-        });
-        const ground = Bodies.rectangle(150, 600, 1600, 25, {
-            isStatic: true,
-            render: {
-                // fillStyle: 'red',
-                fillStyle: 'transparent',
-            }
-        });
-        const left = Bodies.rectangle(0, 0, 25, 1600, {
-            isStatic: true,
-            render: {
-                fillStyle: 'transparent',
-                // #1E1E1E
-            }
-        });
-        const right = Bodies.rectangle(800, 0, 25, 1600, {
-            isStatic: true,
-            render: {
-                fillStyle: 'transparent',
-            }
-        });
+      var stack = Composites.stack(100, 20, 20, 2, 0, 0, function(x, y) {
+        return Bodies.circle(x, y, Common.random(30, 50), { friction: 0.00001, restitution: 0.5, density: 0.001 });
+      });
+
+      const top = Bodies.rectangle(400, 0, 800, 50, { isStatic: true });
+      const ground = Bodies.rectangle(400, 600, 800, 50, { isStatic: true });
+      const left = Bodies.rectangle(800, 300, 50, 600, { isStatic: true });
+      const right = Bodies.rectangle(0, 300, 50, 600, { isStatic: true });
         //#endregion [ walls ]
         
       var mouse = Mouse.create(render.canvas),
@@ -100,36 +83,16 @@ export const Scene = () => {
         mouse: mouse,
         constraint: {
           stiffness: 0.2,
-          render: {
-            // cтранно
-            // visible: true
-          }
         }
       });
 
       World.add(engine.world, mouseConstraint);
+      World.add(engine.world, [top, ground, right, left, stack])
 
-      Object.entries(skillsList1).forEach(element => {
-        let x = Math.floor(Math.random() * 700) + 2;
-        let y = Math.floor(Math.random() * 200) + 1;
-        World.add(engine.world, [top, ground, right, left, Bodies.rectangle(x, y, 190, 90, { 
-            restitution:0.05,
-            friction:1,
-	          density:1,
-            chamfer: { radius: 10 },
-            
-            // height: "1000px",
-            // text: { value: element[0], font: "50"},
-            render: {
-              sprite: {
-                texture: element[1].backgroundImage,
-                xScale: 0.3,
-                yScale: 0.3
-              }
-            }
-        })])
+      Render.lookAt(render, {
+        min: { x: 0, y: 0 },
+        max: { x: 800, y: 600 }
       });
-
 
       Engine.run(engine);
       Render.run(render);
@@ -146,4 +109,5 @@ export const Scene = () => {
       </div>
     );
 };
+
 export default Scene;

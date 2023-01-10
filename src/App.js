@@ -3,7 +3,9 @@ import React from 'react';
 
 import 'uikit/dist/css/uikit.css'
 import 'uikit/dist/js/uikit.js'
-// import Scene from './Scene.js'
+
+import Scene from './Scene.js'
+
 import tgIcon from './Images/git.png'
 import gitIcon from './Images/git-2.png'
 
@@ -52,13 +54,30 @@ function App(props) {
 
         <div className='uk-width-expand@m uk-padding uk-padding-remove-top profile-flex profile-flex-col profile-flex-between uk-padding-remove-bottom'>
           
+          {/* <Scene /> */}
           <div className="uk-card uk-card-body uk-grid-margin uk-text-left">
             <h1 className='profile-font-header uk-animation-slide-top'>Привет! Меня зовут Евгений. Я занимаюсь фронтенд разработкой</h1> 
+            
+            <div className='badge-menu'>
+              <span className="CSS3">CSS3</span>
+              <span className="RestAPI">RestAPI</span>
+              <span className="Tabulator">Tabulator</span>
+              <span className="HTML5">HTML5</span>
+              <span className="Nunjucks">Nunjucks</span>
+              <span className="PostgreSQL">PostgreSQL</span>
+              <span className="SQL">SQL</span>
+              <span className="JavaScript">JavaScript</span>
+              <span className="NodeJS">NodeJS</span>
+              <span className="Bootstrap">Bootstrap</span>
+              <span className="SQLite3">SQLite3</span>
+              <span className="ExpressJS">ExpressJS</span>
+            </div>
+
           </div>
-{/* 
-          <div className="uk-card uk-text-left uk-visible@s uk-height-1-1" id="phaser-example">
-            <Scene/>
-          </div> */}
+
+
+          {/* <div className="uk-card uk-text-left uk-visible@s uk-height-1-1" id="phaser-example"> */}
+          {/* </div> */}
 
         </div>
 
@@ -296,6 +315,21 @@ function App(props) {
                 </div>
                 
               </div>
+            </div>
+
+            <div className='badge-menu-mobile uk-margin-top'>
+              <span className="CSS3">CSS3</span>
+              <span className="RestAPI">RestAPI</span>
+              <span className="Tabulator">Tabulator</span>
+              <span className="HTML5">HTML5</span>
+              <span className="Nunjucks">Nunjucks</span>
+              <span className="PostgreSQL">PostgreSQL</span>
+              <span className="SQL">SQL</span>
+              <span className="JavaScript">JavaScript</span>
+              <span className="NodeJS">NodeJS</span>
+              <span className="Bootstrap">Bootstrap</span>
+              <span className="SQLite3">SQLite3</span>
+              <span className="ExpressJS">ExpressJS</span>
             </div>
         </div>
         
