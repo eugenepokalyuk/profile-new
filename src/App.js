@@ -3,7 +3,9 @@ import React from 'react';
 
 import 'uikit/dist/css/uikit.css'
 import 'uikit/dist/js/uikit.js'
-import Scene from './Scene.js'
+// import Scene from './Scene.js'
+import tgIcon from './Images/git.png'
+import gitIcon from './Images/git-2.png'
 
 function App(props) {
 
@@ -16,7 +18,7 @@ function App(props) {
   return (
     <div className="App uk-animation-fade">
 
-      <div className="uk-child-width-expand@s uk-text-center" data-uk-height-viewport="expand: true" data-uk-grid>
+      <div className="uk-child-width-expand@s uk-text-center uk-visible@l" data-uk-height-viewport="expand: true" data-uk-grid>
         
         <div className='uk-width-auto@m uk-flex uk-flex-between uk-flex-column'>
           
@@ -142,20 +144,6 @@ function App(props) {
               <div className='uk-card uk-padding-small profile-border-rounded profile-card profile-font'>
                 <p className='uk-text-center profile-font-white'>Написал проекты</p>
                 
-                {/* <hr /> */}
-
-                {/* <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
-                  <div className='uk-width-1-3@m'>
-                    <div className="uk-card uk-text-left">HTML & CSS</div>
-                  </div>
-
-                  <div className='uk-text-left'>
-                    <div className="uk-card">
-                      <a href="https://eugenepokalyuk.github.io/profile/" target="_blank" rel="noopener noreferrer">Previous portfolio site</a>
-                    </div>
-                  </div>
-                </div> */}
-
                 <hr />
                 
                 <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
@@ -184,6 +172,133 @@ function App(props) {
 
         </div>
 
+      </div>
+
+      <div className='uk-container uk-section uk-hidden@s'>
+        <div className="uk-flex uk-flex-center">
+          <div>
+            <div className='profile-photo uk-animation-slide-top'></div>
+          </div>
+          <div className='uk-margin-medium-left text-header'>
+            <h1>Привет! Меня<br />зовут Евгений. <br />Я занимаюсь<br />фронтенд<br />разработкой</h1>
+            <a href="https://t.me/papercranejs" className='linkToGit'>
+                <img src={tgIcon} alt=""/>
+            </a>
+            <a href="https://github.com/eugenepokalyuk" className='linkToTg'>
+              <img src={gitIcon} alt="" className='uk-margin-small-top'/>
+            </a>
+          </div>
+        </div>
+
+        <div className='uk-width-1-3@m uk-margin uk-margin-medium-right'>
+            <div className="uk-card uk-text-left uk-animation-slide-top">
+              <div className='uk-card uk-padding-small profile-border-rounded profile-card profile-font'>
+                <p className='uk-text-center profile-font-white'>Прошёл курсы</p>
+              
+                <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">FreeCodeCamp</div>
+                  </div>
+
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="https://www.freecodecamp.org/certification/eugene.pokalyuk/responsive-web-design" target="_blank" rel="noopener noreferrer">Responsive Web Design</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="https://www.freecodecamp.org/certification/eugene.pokalyuk/javascript-algorithms-and-data-structures" target="_blank" rel="noopener noreferrer">JavaScript Algorithms and Data Structures</a>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">HTML Academy</div>
+                  </div>
+
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Старт во фронтенде»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Погружение в вёрстку»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Погружение в JavaScript»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Продвинутые техники и инструменты вёрстки»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Знакомство с бэкендом»</a>
+                    </div>
+
+                    <div className="uk-card">
+                      <a href="https://htmlacademy.ru/profile/id137373" target="_blank" rel="noopener noreferrer">«Ретровёрстка»</a>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">Skillbox</div>
+                  </div>
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="#example">Веб-верстка «Базовый уровень», «Продвинутый уровень»</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="#example">JavaScript «Базовый уровень», «Продвинутый уровень»</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="#example">Node.js</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+            <div className="uk-card uk-text-left uk-animation-slide-top uk-margin-top">
+              <div className='uk-card uk-padding-small profile-border-rounded profile-card profile-font'>
+                <p className='uk-text-center profile-font-white'>Написал проекты</p>
+                
+                <hr />
+                
+                <div className="uk-child-width-expand@s uk-text-center" data-uk-grid>
+                  <div className='uk-width-1-3@m'>
+                    <div className="uk-card uk-text-left">React</div>
+                  </div>
+
+                  <div className='uk-text-left'>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/todo-list/" target="_blank" rel="noopener noreferrer">Todo list</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/magic-cube/" target="_blank" rel="noopener noreferrer">Magic Ball</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/calc/" target="_blank" rel="noopener noreferrer">Calculator</a>
+                    </div>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/Tic-tac-toe/" target="_blank" rel="noopener noreferrer">Tic-tac-toe</a>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+        
       </div>
       
     </div>
