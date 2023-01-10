@@ -54,7 +54,6 @@ function App(props) {
 
         <div className='uk-width-expand@m uk-padding uk-padding-remove-top profile-flex profile-flex-col profile-flex-between uk-padding-remove-bottom'>
           
-          {/* <Scene /> */}
           <div className="uk-card uk-card-body uk-grid-margin uk-text-left">
             <h1 className='profile-font-header uk-animation-slide-top'>Привет! Меня зовут Евгений. Я занимаюсь фронтенд разработкой</h1> 
             
@@ -72,8 +71,8 @@ function App(props) {
               <span className="SQLite3">SQLite3</span>
               <span className="ExpressJS">ExpressJS</span>
             </div>
-
           </div>
+            {/* <Scene /> */}
 
 
           {/* <div className="uk-card uk-text-left uk-visible@s uk-height-1-1" id="phaser-example"> */}
