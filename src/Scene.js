@@ -1,7 +1,6 @@
 import React from 'react';
 import Matter from 'matter-js';
-const {useEffect, useRef} = React;
-
+const {useEffect, useState, useRef, useLayoutEffect} = React;
 const skillsList1 = {
   'CSS3': { 
     backgroundImage: "https://github.com/eugenepokalyuk/profile-v2.0/blob/main/src/Images/assets/CSS3.png?raw=true"
@@ -43,8 +42,11 @@ const skillsList1 = {
 export const Scene = () => {
     const boxRef = useRef(null);
     const canvasRef = useRef(null);
-  
-    useEffect(() => {
+    const [width, setWidth] = useState(1200);
+    const [height, setHeight] = useState(800);
+    const style = { width, height };
+
+    useLayoutEffect(() => {
         let Engine = Matter.Engine;
         let Render = Matter.Render;
         let World = Matter.World;
@@ -52,9 +54,6 @@ export const Scene = () => {
         let Mouse = Matter.Mouse;
         let MouseConstraint = Matter.MouseConstraint;
         let engine = Engine.create();
-        // let engine = Engine.create({
-            // controller: CustomRenderer,
-        // });
         let render = Render.create({
             element: boxRef.current,
             engine: engine,
@@ -64,28 +63,30 @@ export const Scene = () => {
                 wireframes: false
             }
         });
-
+        
       //#region [ walls ]
-        const top = Bodies.rectangle(0, 0, 1600, 100, {
+        const top = Bodies.rectangle(0, 0, 1600, 25, {
             isStatic: true,
             render: {
+                // fillStyle: 'red',
                 fillStyle: 'transparent',
             }
         });
-        const ground = Bodies.rectangle(150, 610, 1600, 100, {
+        const ground = Bodies.rectangle(150, 600, 1600, 25, {
             isStatic: true,
             render: {
+                // fillStyle: 'red',
                 fillStyle: 'transparent',
             }
         });
-        const left = Bodies.rectangle(0, 0, 100, 1600, {
+        const left = Bodies.rectangle(0, 0, 25, 1600, {
             isStatic: true,
             render: {
                 fillStyle: 'transparent',
                 // #1E1E1E
             }
         });
-        const right = Bodies.rectangle(810, 0, 100, 1600, {
+        const right = Bodies.rectangle(800, 0, 25, 1600, {
             isStatic: true,
             render: {
                 fillStyle: 'transparent',
@@ -100,7 +101,8 @@ export const Scene = () => {
         constraint: {
           stiffness: 0.2,
           render: {
-            visible: false
+            // cтранно
+            // visible: true
           }
         }
       });
@@ -111,13 +113,12 @@ export const Scene = () => {
         let x = Math.floor(Math.random() * 700) + 2;
         let y = Math.floor(Math.random() * 200) + 1;
         World.add(engine.world, [top, ground, right, left, Bodies.rectangle(x, y, 190, 90, { 
-            // restitution:0.05,
-            restitution:0.95,
+            restitution:0.05,
             friction:1,
 	          density:1,
-
             chamfer: { radius: 10 },
             
+            // height: "1000px",
             // text: { value: element[0], font: "50"},
             render: {
               sprite: {
@@ -129,6 +130,7 @@ export const Scene = () => {
         })])
       });
 
+
       Engine.run(engine);
       Render.run(render);
     });
@@ -136,11 +138,11 @@ export const Scene = () => {
       <div
         ref={boxRef}
         style={{
-          // width: 2000,
-          // height: 250
+          width: "100%",
+          height: "100%"
         }}
       >
-        <canvas ref={canvasRef} />
+        <canvas ref={canvasRef} style={style}/>
       </div>
     );
 };
