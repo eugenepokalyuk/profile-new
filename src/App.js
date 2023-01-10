@@ -181,10 +181,10 @@ function App(props) {
           </div>
           <div className='uk-margin-medium-left text-header'>
             <h1>Привет! Меня<br />зовут Евгений. <br />Я занимаюсь<br />фронтенд<br />разработкой</h1>
-            <a href="https://t.me/papercranejs" className='linkToGit'>
+            <a href="https://github.com/eugenepokalyuk" className='linkToGit'>
                 <img src={tgIcon} alt=""/>
             </a>
-            <a href="https://github.com/eugenepokalyuk" className='linkToTg'>
+            <a href="https://t.me/papercranejs" className='linkToTg'>
               <img src={gitIcon} alt="" className='uk-margin-small-top'/>
             </a>
           </div>
