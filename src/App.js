@@ -171,6 +171,9 @@ function App(props) {
                     <div className="uk-card">
                       <a href="https://eugenepokalyuk.github.io/calc/" target="_blank" rel="noopener noreferrer">Calculator</a>
                     </div>
+                    <div className="uk-card">
+                      <a href="https://eugenepokalyuk.github.io/Tic-tac-toe/" target="_blank" rel="noopener noreferrer">Tic-tac-toe</a>
+                    </div>
                   </div>
                 </div>
                 
