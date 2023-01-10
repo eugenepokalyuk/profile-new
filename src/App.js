@@ -4,7 +4,7 @@ import React from 'react';
 import 'uikit/dist/css/uikit.css'
 import 'uikit/dist/js/uikit.js'
 
-import Scene from './Scene.js'
+// import Scene from './Scene.js'
 
 import tgIcon from './Images/git.png'
 import gitIcon from './Images/git-2.png'
@@ -59,7 +59,7 @@ function App(props) {
           <div className="uk-card uk-card-body uk-grid-margin uk-text-left">
             <h1 className='profile-font-header uk-animation-slide-top'>Привет! Меня зовут Евгений. Я занимаюсь фронтенд разработкой</h1>
 
-            <div className='badge-menu'>
+            <div className='badge-menu uk-animation-slide-top'>
               <span className="CSS3">CSS3</span>
               <span className="RestAPI">RestAPI</span>
               <span className="Tabulator">Tabulator</span>
@@ -197,7 +197,7 @@ function App(props) {
         </div>
 
         <div className='uk-width-1-3@m uk-margin uk-margin-medium-right'>
-          <div className="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top borderRounded card-background" data-uk-grid>
+          <div className="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top borderRounded card-background uk-animation-slide-top" data-uk-grid>
             <div>
               <div className="uk-padding-small uk-border-rounded card-title color-white">ПРОШЁЛ КУРСЫ</div>
               <hr className='uk-align-center uk-margin-remove-top' style={width90} />
@@ -247,7 +247,7 @@ function App(props) {
             </div>
           </div>
 
-          <div className="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top borderRounded card-background" data-uk-grid>
+          <div className="uk-grid-collapse uk-child-width-expand@s uk-text-center uk-margin-large-top borderRounded card-background uk-animation-slide-top" data-uk-grid>
             <div>
               <div className="uk-padding-small uk-border-rounded card-title color-white">НАПИСАЛ ПРОЕКТЫ</div>
               <hr className='uk-align-center uk-margin-remove-top' style={width90} />
@@ -270,7 +270,7 @@ function App(props) {
 
           </div>
 
-          <div className='badge-menu-mobile uk-margin-top'>
+          <div className='badge-menu-mobile uk-margin-top uk-animation-slide-top'>
             <span className="CSS3">CSS3</span>
             <span className="RestAPI">RestAPI</span>
             <span className="Tabulator">Tabulator</span>
