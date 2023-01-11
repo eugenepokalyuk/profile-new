@@ -171,6 +171,9 @@ function App(props) {
                   <div className="uk-card">
                     <a href="https://eugenepokalyuk.github.io/Tic-tac-toe/" target="_blank" rel="noopener noreferrer">Tic-tac-toe</a>
                   </div>
+                  <div className="uk-card">
+                    <a href="https://eugenepokalyuk.github.io/exchange-rate-tracker/" target="_blank" rel="noopener noreferrer">Exchange Rate Tracker</a>
+                  </div>
                 </div>
               </div>
 
@@ -262,6 +265,7 @@ function App(props) {
                     <li><a href="https://eugenepokalyuk.github.io/magic-cube/">Magic ball</a></li>
                     <li><a href="https://eugenepokalyuk.github.io/calc/">Calculator</a></li>
                     <li><a href="https://eugenepokalyuk.github.io/Tic-tac-toe/">Tic-tac-toe</a></li>
+                    <li><a href="https://eugenepokalyuk.github.io/exchange-rate-tracker/">Exchange Rate Tracker</a></li>
                   </ul>
                 </div>
               </div>
